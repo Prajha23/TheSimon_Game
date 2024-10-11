@@ -11,7 +11,7 @@ body {
 }
 
 #level-title {
-  font-size: 2rem; 
+  font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
 }
@@ -21,15 +21,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
   max-width: 500px;
 }
 
 .btn {
   width: 150px;
   height: 150px;
-  border-radius: 50%; 
-  gap: 30px;
+  border-radius: 0;
   border: 5px solid #000;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -71,7 +70,7 @@ body {
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  display: none; /* Will display on mobile */
+  display: block;
 }
 
 #start-btn:hover {
@@ -99,22 +98,21 @@ body {
   display: none;
 }
 
-
 @media (max-width: 600px) {
   #level-title {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .btn {
-    width: 100px; 
+    width: 100px;
     height: 100px;
   }
 
   #start-btn {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .dashboard {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }
