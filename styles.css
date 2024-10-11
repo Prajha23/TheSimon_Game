@@ -28,7 +28,7 @@ body {
 .btn {
   width: 150px;
   height: 150px;
-  border-radius: 0;
+  border-radius: 50%;
   border: 5px solid #000;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -114,5 +114,15 @@ body {
 
   .dashboard {
     font-size: 0.9rem;
+  }
+
+  #start-btn {
+    display: block;
+  }
+}
+
+@media (min-width: 601px) {
+  #start-btn {
+    display: none;
   }
 }
