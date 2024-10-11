@@ -95,16 +95,16 @@ body {
 
 @media (max-width: 600px) {
   #level-title {
-    font-size: 1.5rem;
+    font-size: 30px;
   }
 
   .btn {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   #start-btn {
-    font-size: 1rem;
+    font-size: 30px;
   }
 
   .dashboard {
