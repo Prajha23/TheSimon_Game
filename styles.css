@@ -1,53 +1,98 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #023863; 
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  font-size: 2rem;
+  color: goldenrod;
+  margin-bottom: 20px;
 }
 
 .container {
-  display: block;
-  width: 50%;
-  margin: auto;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 500px;
 }
 
 .btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2);
 }
 
 .red {
-  background-color: red;
+  background-color: #ff6f6f;
 }
 
 .green {
-  background-color: green;
+  background-color: #98e698;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #6fa3ff;
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #ffff9f;
 }
 
 .pressed {
   box-shadow: 0 0 20px white;
-  background-color: grey;
+  background-color: #ccc;
+}
+
+#start-btn {
+  padding: 10px 20px;
+  background-color: #ffcc66;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: none;
+}
+
+#start-btn:hover {
+  background-color: #ff9933;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #04023f;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard p {
+  margin: 5px;
+}
+
+.hidden {
+  display: none;
 }
